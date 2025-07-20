@@ -26,7 +26,7 @@ sudo pacman -S kitty --noconfirm
 
 dirs_config=(bspwm sxhkd polybar)
 
-for i in "${dirs[@]}"; do
+for i in "${dirs_config[@]}"; do 
     mkdir -p ~/.config/$i
     cp -r ./$i/* ~/.config/$i/
 done
