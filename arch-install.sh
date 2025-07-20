@@ -24,8 +24,16 @@ sudo pacman -S kitty --noconfirm
 
 # Config 
 
-for i in bspwm sxhkd polybar; do
+dirs_config=(bspwm sxhkd polybar)
+
+for i in "${dirs[@]}"; do
     mkdir -p ~/.config/$i
+    cp -r ./$i/* ~/.config/$i/
 done
 
-# chmod +x ~/.config/bspwm/bspwmrc
+## config x init
+cp -R ./xinit/* ~/
+
+##  
+
+chmod +x ~/.config/bspwm/bspwmrc
