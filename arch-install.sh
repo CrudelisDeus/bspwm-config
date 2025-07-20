@@ -34,6 +34,7 @@ done
 ## config x init
 cp -R ./xinit/.* ~/
 
-##  
+## 
 
 chmod +x ~/.config/bspwm/bspwmrc
+chmod +x ~/.config/polybar/launch.sh
