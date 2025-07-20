@@ -20,7 +20,7 @@ sudo pacman -S bspwm sxhkd dmenu polybar picom --noconfirm
 
 # [5] Terminal - Kitty install
 
-sudo pacman -S kitty
+sudo pacman -S kitty --noconfirm
 
 # Config 
 
@@ -28,11 +28,4 @@ for i in bspwm sxhkd polybar; do
     mkdir -p ~/.config/$i
 done
 
-cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
-chmod +x ~/.config/bspwm/bspwmrc
-
-mkdir -p ~/.config/sxhkd
-cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
-
-mkdir -p ~/.config/polybar
-cp /usr/share/doc/polybar/examples/config.ini ~/.config/polybar/config.ini
+# chmod +x ~/.config/bspwm/bspwmrc
