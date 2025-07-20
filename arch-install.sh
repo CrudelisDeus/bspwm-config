@@ -32,7 +32,7 @@ for i in "${dirs_config[@]}"; do
 done
 
 ## config x init
-cp -R ./xinit/* ~/
+cp -R ./xinit/.* ~/
 
 ##  
 
